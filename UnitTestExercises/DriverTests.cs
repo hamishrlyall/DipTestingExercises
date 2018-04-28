@@ -19,13 +19,6 @@ namespace DipTestingExercises.UnitTests
         {
             fd = new FakeDriver("FakeFirstName", "FakeLastName", "FakeGender", "FakeLicence");
         }
-
-        [Test]
-        [Ignore("Test To Ignore")]
-        public void Driver_Test_To_Ignore()
-        {
-
-        }
         [Test]
         public void Driver_Constructor_IsCalled_AttributesSet()
         {
@@ -34,16 +27,13 @@ namespace DipTestingExercises.UnitTests
             Assert.AreEqual("FakeGender", fd.getGender());
             Assert.AreEqual("FakeLicence", fd.getLicenceType());
         }
-
         [Test]
         public void Driver_getLicenceType_IsCalled()
         {
             // Act
             fd.getLicenceType();
-
             // Assert
             Assert.AreEqual("FakeLicence", fd.getLicenceType());
-
         }
     }
 }

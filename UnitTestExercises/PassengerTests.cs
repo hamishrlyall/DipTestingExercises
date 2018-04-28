@@ -21,13 +21,6 @@ namespace DipTestingExercises.UnitTests
         }
 
         [Test]
-        [Ignore("Test To Ignore")]
-        public void Passenger_Test_To_Ignore()
-        {
-
-        }
-
-        [Test]
         public void Passenger_Constructor_IsCalled_AtrributesSet()
         {
             // Arrange
